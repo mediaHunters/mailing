@@ -29,7 +29,8 @@ app.post("/send-email", (req, res, next) => {
       res.sendStatus(200);
     })
     .catch((error) => {
-      res.sendStatus(401);
+
+      res..sendStatus(401);
       new Error("An error message")
 
     });
