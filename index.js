@@ -6,9 +6,10 @@ const bodyParser = require('body-parser');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json())
+app.options('*', cors())
 app.use(cors());
 app.listen(3000, () => {});
-
+app.options("/send-email", cors())
 app.post("/send-email", (req, res, next) => {
   const { name, email, phone, message } = req.body;
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
