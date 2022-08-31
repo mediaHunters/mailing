@@ -1,0 +1,114 @@
+[debug] [2022-08-31T18:41:46.446Z] ----------------------------------------------------------------------
+[debug] [2022-08-31T18:41:46.450Z] Command:       /usr/local/bin/firebase /home/castro/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2022-08-31T18:41:46.451Z] CLI Version:   11.7.0
+[debug] [2022-08-31T18:41:46.451Z] Platform:      linux
+[debug] [2022-08-31T18:41:46.451Z] Node Version:  v16.16.0
+[debug] [2022-08-31T18:41:46.452Z] Time:          Wed Aug 31 2022 20:41:46 GMT+0200 (Central European Summer Time)
+[debug] [2022-08-31T18:41:46.452Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-31T18:41:46.465Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-08-31T18:41:46.491Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-31T18:41:46.492Z] > authorizing via signed-in user (hello.mediahunters@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /mnt/c/Users/adiy/root/work/mailing
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[debug] [2022-08-31T18:41:46.917Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-08-31T18:41:46.919Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2022-08-31T18:42:47.443Z] > refreshing access token with scopes: []
+[debug] [2022-08-31T18:42:47.448Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-08-31T18:42:47.449Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-08-31T18:42:47.569Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-08-31T18:42:47.569Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-08-31T18:42:47.590Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2022-08-31T18:42:47.590Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"mailing-sengrid","name":"mail-sendgrid"}
+[debug] [2022-08-31T18:42:48.559Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2022-08-31T18:42:48.559Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.5222533977326082064"}
+[debug] [2022-08-31T18:42:48.561Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5222533977326082064 [none]
+[debug] [2022-08-31T18:42:49.528Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5222533977326082064 200
+[debug] [2022-08-31T18:42:49.528Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5222533977326082064 {"name":"operations/cp.5222533977326082064"}
+[debug] [2022-08-31T18:42:50.029Z] [Project Creation Poller] Retrying task index 0
+[debug] [2022-08-31T18:42:50.030Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5222533977326082064 [none]
+[debug] [2022-08-31T18:42:50.939Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5222533977326082064 200
+[debug] [2022-08-31T18:42:50.940Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5222533977326082064 {"name":"operations/cp.5222533977326082064"}
+[debug] [2022-08-31T18:42:51.941Z] [Project Creation Poller] Retrying task index 0
+[debug] [2022-08-31T18:42:51.942Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5222533977326082064 [none]
+[debug] [2022-08-31T18:42:52.918Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5222533977326082064 200
+[debug] [2022-08-31T18:42:52.919Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5222533977326082064 {"name":"operations/cp.5222533977326082064","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"675877080937","projectId":"mailing-sengrid","lifecycleState":"ACTIVE","name":"mail-sendgrid","createTime":"2022-08-31T18:42:48.378Z"}}
+[debug] [2022-08-31T18:42:52.923Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/mailing-sengrid:addFirebase [none]
+[debug] [2022-08-31T18:42:56.256Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/mailing-sengrid:addFirebase 200
+[debug] [2022-08-31T18:42:56.257Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/mailing-sengrid:addFirebase {"name":"operations/workflows/OGYxNGY3NzEtYTdkNS00MzQxLTkwMjctNjU5YzdjOTQ5MThm"}
+[debug] [2022-08-31T18:42:56.258Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGYxNGY3NzEtYTdkNS00MzQxLTkwMjctNjU5YzdjOTQ5MThm [none]
+[debug] [2022-08-31T18:42:57.111Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGYxNGY3NzEtYTdkNS00MzQxLTkwMjctNjU5YzdjOTQ5MThm 200
+[debug] [2022-08-31T18:42:57.113Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGYxNGY3NzEtYTdkNS00MzQxLTkwMjctNjU5YzdjOTQ5MThm {"name":"operations/workflows/OGYxNGY3NzEtYTdkNS00MzQxLTkwMjctNjU5YzdjOTQ5MThm"}
+[debug] [2022-08-31T18:42:57.615Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2022-08-31T18:42:57.617Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGYxNGY3NzEtYTdkNS00MzQxLTkwMjctNjU5YzdjOTQ5MThm [none]
+[debug] [2022-08-31T18:42:58.450Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGYxNGY3NzEtYTdkNS00MzQxLTkwMjctNjU5YzdjOTQ5MThm 200
+[debug] [2022-08-31T18:42:58.451Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGYxNGY3NzEtYTdkNS00MzQxLTkwMjctNjU5YzdjOTQ5MThm {"name":"operations/workflows/OGYxNGY3NzEtYTdkNS00MzQxLTkwMjctNjU5YzdjOTQ5MThm"}
+[debug] [2022-08-31T18:42:59.452Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2022-08-31T18:42:59.454Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGYxNGY3NzEtYTdkNS00MzQxLTkwMjctNjU5YzdjOTQ5MThm [none]
+[debug] [2022-08-31T18:43:00.070Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGYxNGY3NzEtYTdkNS00MzQxLTkwMjctNjU5YzdjOTQ5MThm 200
+[debug] [2022-08-31T18:43:00.070Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGYxNGY3NzEtYTdkNS00MzQxLTkwMjctNjU5YzdjOTQ5MThm {"name":"operations/workflows/OGYxNGY3NzEtYTdkNS00MzQxLTkwMjctNjU5YzdjOTQ5MThm"}
+[debug] [2022-08-31T18:43:02.071Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2022-08-31T18:43:02.072Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGYxNGY3NzEtYTdkNS00MzQxLTkwMjctNjU5YzdjOTQ5MThm [none]
+[debug] [2022-08-31T18:43:02.758Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGYxNGY3NzEtYTdkNS00MzQxLTkwMjctNjU5YzdjOTQ5MThm 200
+[debug] [2022-08-31T18:43:02.758Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGYxNGY3NzEtYTdkNS00MzQxLTkwMjctNjU5YzdjOTQ5MThm {"name":"operations/workflows/OGYxNGY3NzEtYTdkNS00MzQxLTkwMjctNjU5YzdjOTQ5MThm"}
+[debug] [2022-08-31T18:43:06.760Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2022-08-31T18:43:06.763Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGYxNGY3NzEtYTdkNS00MzQxLTkwMjctNjU5YzdjOTQ5MThm [none]
+[debug] [2022-08-31T18:43:07.293Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGYxNGY3NzEtYTdkNS00MzQxLTkwMjctNjU5YzdjOTQ5MThm 200
+[debug] [2022-08-31T18:43:07.293Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGYxNGY3NzEtYTdkNS00MzQxLTkwMjctNjU5YzdjOTQ5MThm {"name":"operations/workflows/OGYxNGY3NzEtYTdkNS00MzQxLTkwMjctNjU5YzdjOTQ5MThm","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"mailing-sengrid","projectNumber":"675877080937","displayName":"mail-sendgrid","name":"projects/mailing-sengrid","resources":{"hostingSite":"mailing-sengrid"}}}
+[info] 
+[info] 🎉🎉🎉 Your Firebase project is ready! 🎉🎉🎉
+[info] 
+[info] Project information:
+[info]    - Project ID: mailing-sengrid
+[info]    - Project Name: mail-sendgrid
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/mailing-sengrid/overview
+[info] i  Using project mailing-sengrid (mail-sendgrid) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] ✔  Wrote public/404.html 
+[debug] [2022-08-31T18:45:50.769Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-08-31T18:45:50.856Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-08-31T18:45:50.856Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.9.3","browserURL":"https://www.gstatic.com/firebasejs/9.9.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.9.3/firebase.tgz"},"live":{"version":"9.9","browserURL":"https://www.gstatic.com/firebasejs/live/9.9/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.9/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.9.3/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.9.3/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.9.3/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.9.3/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.9.3/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.9.3/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.9.3/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.9.3/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.9.3/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.9.3/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.9.3/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.9.3/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.9.3/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore.memory.js"}}
+[info] ✔  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming /mnt/c/Users/adiy/root/work/mailing is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=117929699&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-08-31T18:45:50.913Z] Error: spawn cmd.exe ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[error] 
+[error] Error: An unexpected error has occurred.
